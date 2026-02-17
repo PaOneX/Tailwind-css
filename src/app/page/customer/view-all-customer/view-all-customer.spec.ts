@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewAll } from './view-all';
+import { ViewAllCustomer } from './view-all-customer';
 
-describe('ViewAll', () => {
-  let component: ViewAll;
-  let fixture: ComponentFixture<ViewAll>;
+describe('ViewAllCustomer', () => {
+  let component: ViewAllCustomer;
+  let fixture: ComponentFixture<ViewAllCustomer>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ViewAll]
+      imports: [ViewAllCustomer]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ViewAll);
+    fixture = TestBed.createComponent(ViewAllCustomer);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

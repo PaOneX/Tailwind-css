@@ -1,1 +1,121 @@
-<p>view-all works!</p>
+<div class="w-full">
+  <div class="bg-white shadow-lg rounded-lg border border-default overflow-hidden">
+    <!-- Header -->
+    <div class="px-6 py-4 border-b border-default bg-neutral-primary-soft">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold text-heading">All Items</h2>
+        <div class="flex gap-2">
+          <input type="search" placeholder="Search items..." class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-3 py-2 shadow-xs placeholder:text-body" />
+          <button class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2 focus:outline-none">
+            Export
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-left">
+        <thead class="text-xs text-heading uppercase bg-neutral-secondary-soft border-b border-default">
+          <tr>
+            <th scope="col" class="px-6 py-3">Item Code</th>
+            <th scope="col" class="px-6 py-3">Item Name</th>
+            <th scope="col" class="px-6 py-3">Category</th>
+            <th scope="col" class="px-6 py-3">Unit Price</th>
+            <th scope="col" class="px-6 py-3">Quantity</th>
+            <th scope="col" class="px-6 py-3">Status</th>
+            <th scope="col" class="px-6 py-3">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white border-b border-default hover:bg-neutral-primary-soft transition-colors">
+            <td class="px-6 py-4 font-medium text-heading">ITM001</td>
+            <td class="px-6 py-4 text-body">Wireless Mouse</td>
+            <td class="px-6 py-4 text-body">Electronics</td>
+            <td class="px-6 py-4 text-body">$29.99</td>
+            <td class="px-6 py-4 text-body">150</td>
+            <td class="px-6 py-4">
+              <span class="bg-success-soft text-fg-success-strong text-xs font-medium px-2.5 py-0.5 rounded-full border border-success-subtle">In Stock</span>
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex gap-2">
+                <button class="text-brand hover:text-brand-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                  </svg>
+                </button>
+                <button class="text-danger hover:text-danger-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="bg-white border-b border-default hover:bg-neutral-primary-soft transition-colors">
+            <td class="px-6 py-4 font-medium text-heading">ITM002</td>
+            <td class="px-6 py-4 text-body">Laptop Stand</td>
+            <td class="px-6 py-4 text-body">Electronics</td>
+            <td class="px-6 py-4 text-body">$49.99</td>
+            <td class="px-6 py-4 text-body">75</td>
+            <td class="px-6 py-4">
+              <span class="bg-success-soft text-fg-success-strong text-xs font-medium px-2.5 py-0.5 rounded-full border border-success-subtle">In Stock</span>
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex gap-2">
+                <button class="text-brand hover:text-brand-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                  </svg>
+                </button>
+                <button class="text-danger hover:text-danger-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="bg-white hover:bg-neutral-primary-soft transition-colors">
+            <td class="px-6 py-4 font-medium text-heading">ITM003</td>
+            <td class="px-6 py-4 text-body">Office Chair</td>
+            <td class="px-6 py-4 text-body">Furniture</td>
+            <td class="px-6 py-4 text-body">$199.99</td>
+            <td class="px-6 py-4 text-body">5</td>
+            <td class="px-6 py-4">
+              <span class="bg-warning-soft text-fg-warning-strong text-xs font-medium px-2.5 py-0.5 rounded-full border border-warning-subtle">Low Stock</span>
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex gap-2">
+                <button class="text-brand hover:text-brand-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                  </svg>
+                </button>
+                <button class="text-danger hover:text-danger-strong">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="px-6 py-4 border-t border-default bg-neutral-primary-soft">
+      <div class="flex items-center justify-between">
+        <div class="text-sm text-body">
+          Showing <span class="font-medium text-heading">1</span> to <span class="font-medium text-heading">3</span> of <span class="font-medium text-heading">3</span> entries
+        </div>
+        <nav class="flex gap-1">
+          <button class="px-3 py-1 text-sm text-body bg-neutral-secondary-medium border border-default-medium rounded-base hover:bg-neutral-tertiary">Previous</button>
+          <button class="px-3 py-1 text-sm text-white bg-brand border border-brand rounded-base">1</button>
+          <button class="px-3 py-1 text-sm text-body bg-neutral-secondary-medium border border-default-medium rounded-base hover:bg-neutral-tertiary">Next</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

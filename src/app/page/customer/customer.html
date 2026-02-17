@@ -1,1 +1,33 @@
-<p>customer works!</p>
+<div class="container mx-auto px-4 py-6">
+  <div class="mb-6">
+    <h1 class="text-3xl font-bold text-heading mb-4">Customer Management</h1>
+    <p class="text-body mb-6">Manage your customer database effectively</p>
+    
+    <!-- Navigation Tabs -->
+    <div class="border-b border-default">
+      <nav class="flex space-x-4" aria-label="Tabs">
+        <a routerLink="add-customer" routerLinkActive="border-brand text-fg-brand" class="border-b-2 border-transparent px-4 py-2 text-sm font-medium text-body hover:text-fg-brand hover:border-brand-soft transition-colors">
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+            </svg>
+            Add Customer
+          </span>
+        </a>
+        <a routerLink="view-customer" routerLinkActive="border-brand text-fg-brand" class="border-b-2 border-transparent px-4 py-2 text-sm font-medium text-body hover:text-fg-brand hover:border-brand-soft transition-colors">
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+            View All Customers
+          </span>
+        </a>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Content Area -->
+  <div class="mt-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>

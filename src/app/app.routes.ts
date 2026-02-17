@@ -11,46 +11,50 @@ import { AddCustomer } from './page/customer/add-customer/add-customer';
 import { ViewAllCustomer } from './page/customer/view-all-customer/view-all-customer';
 
 export const routes: Routes = [
-    {
-        path: 'login',
-        component: Login
-    },
-    {
-        path: 'register',
-        component: Register
-    },
-    {
-        path: 'dashboard',
-        component: Dashboard,
+  {
+    path: 'login',
+    component: Login,
+  },
+  {
+    path: 'register',
+    component: Register,
+  },
+  {
+    path: 'dashboard',
+    component: Dashboard,
+    children: [
+      {
+        path: 'item',
+        component:Item,
         children: [
-            {
-                path: 'item',
-                component: Item,
-                children:[
-                    {
-                        path: 'add-item',
-                        component: AddItem
-                    },{
-                        path:'view-item',
-                        component:ViewAll
-                    }
-                ]
-            },{
-                path:'customer',
-                component:Customer,
-                children:[
-                    {
-                        path:'add-customer',
-                        component:AddCustomer
-                    },{
-                        path:'view-customer',
-                        component:ViewAllCustomer
-                    }
-                ]
-            },{
-                path:'order',
-                component: Order,
-            }
-        ]
-    }
+          {
+            path: 'add-item',
+            component: AddItem,
+          },
+          {
+            path: 'view-item',
+            component: ViewAll,
+          },
+        ],
+      },
+      {
+        path: 'customer',
+        component: Customer,
+        children: [
+          {
+            path: 'add-customer',
+            component: AddCustomer,
+          },
+          {
+            path: 'view-customer',
+            component: ViewAllCustomer,
+          },
+        ],
+      },
+      {
+        path: 'order',
+        component: Order,
+      }
+    ]
+  }
 ];

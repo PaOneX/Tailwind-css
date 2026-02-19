@@ -9,8 +9,14 @@ import { ViewAll } from './page/item/view-all/view-all';
 import { Customer } from './page/customer/customer';
 import { AddCustomer } from './page/customer/add-customer/add-customer';
 import { ViewAllCustomer } from './page/customer/view-all-customer/view-all-customer';
+import { DashboardOverview } from './page/dashboard/dashboard-overview';
 
 export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
   {
     path: 'login',
     component: Login,
@@ -23,6 +29,15 @@ export const routes: Routes = [
     path: 'dashboard',
     component: Dashboard,
     children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'overview'
+      },
+      {
+        path: 'overview',
+        component:DashboardOverview
+      },
       {
         path: 'item',
         component:Item,

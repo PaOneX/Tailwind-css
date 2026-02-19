@@ -1,0 +1,213 @@
+<!-- Dashboard Overview -->
+<div class="space-y-6">
+  <!-- Welcome Section -->
+  <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg p-8 text-white">
+    <h1 class="text-3xl font-bold mb-2">Welcome to BizManager</h1>
+    <p class="text-blue-100">Manage your business operations efficiently</p>
+  </div>
+
+  <!-- Stats Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Total Revenue Card -->
+    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600 hover:shadow-lg transition-shadow">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-600 font-medium">Total Revenue</p>
+          <p class="text-2xl font-bold text-gray-900 mt-2">$54,239</p>
+          <p class="text-xs text-green-600 mt-1 flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
+            </svg>
+            +12.5% from last month
+          </p>
+        </div>
+        <div class="bg-blue-50 p-3 rounded-full">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Items Card -->
+    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-600 hover:shadow-lg transition-shadow">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-600 font-medium">Total Items</p>
+          <p class="text-2xl font-bold text-gray-900 mt-2">342</p>
+          <p class="text-xs text-gray-500 mt-1">In stock: 287</p>
+        </div>
+        <div class="bg-green-50 p-3 rounded-full">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Customers Card -->
+    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:shadow-lg transition-shadow">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-600 font-medium">Total Customers</p>
+          <p class="text-2xl font-bold text-gray-900 mt-2">1,234</p>
+          <p class="text-xs text-blue-600 mt-1 flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
+            </svg>
+            +8.2% this week
+          </p>
+        </div>
+        <div class="bg-purple-50 p-3 rounded-full">
+          <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Orders Today Card -->
+    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-orange-600 hover:shadow-lg transition-shadow">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm text-gray-600 font-medium">Orders Today</p>
+          <p class="text-2xl font-bold text-gray-900 mt-2">47</p>
+          <p class="text-xs text-gray-500 mt-1">Pending: 12</p>
+        </div>
+        <div class="bg-orange-50 p-3 rounded-full">
+          <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Activity and Quick Actions -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Quick Actions -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
+      <div class="space-y-3">
+        <a routerLink="/dashboard/item/add-item" class="flex items-center p-3 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors group">
+          <div class="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-900">Add New Item</span>
+        </a>
+        
+        <a routerLink="/dashboard/customer/add-customer" class="flex items-center p-3 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors group">
+          <div class="bg-purple-600 p-2 rounded-lg group-hover:bg-purple-700">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-900">Add New Customer</span>
+        </a>
+        
+        <a routerLink="/dashboard/order" class="flex items-center p-3 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors group">
+          <div class="bg-orange-600 p-2 rounded-lg group-hover:bg-orange-700">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-900">Create New Order</span>
+        </a>
+        
+        <a routerLink="/dashboard/item/view-item" class="flex items-center p-3 bg-green-50 hover:bg-green-100 rounded-lg transition-colors group">
+          <div class="bg-green-600 p-2 rounded-lg group-hover:bg-green-700">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-900">View All Items</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Recent Orders -->
+    <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold text-gray-900">Recent Orders</h2>
+        <a routerLink="/dashboard/order" class="text-sm text-blue-600 hover:text-blue-800 font-medium">View All</a>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-sm font-semibold text-blue-600">#001</span>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900">John Doe</p>
+              <p class="text-xs text-gray-500">2 items • $109.97</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-medium text-green-800 bg-green-100 rounded-full">Completed</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+              <span class="text-sm font-semibold text-purple-600">#002</span>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900">Jane Smith</p>
+              <p class="text-xs text-gray-500">5 items • $349.95</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-medium text-yellow-800 bg-yellow-100 rounded-full">Pending</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+              <span class="text-sm font-semibold text-orange-600">#003</span>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900">Robert Johnson</p>
+              <p class="text-xs text-gray-500">1 item • $199.99</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-medium text-blue-800 bg-blue-100 rounded-full">Processing</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+              <span class="text-sm font-semibold text-green-600">#004</span>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900">Emily Davis</p>
+              <p class="text-xs text-gray-500">3 items • $89.97</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-medium text-green-800 bg-green-100 rounded-full">Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sales Chart Placeholder -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-lg font-semibold text-gray-900">Sales Overview</h2>
+      <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <option>Last 7 days</option>
+        <option>Last 30 days</option>
+        <option>Last 3 months</option>
+        <option>Last year</option>
+      </select>
+    </div>
+    <div class="h-64 flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-dashed border-gray-300">
+      <div class="text-center">
+        <svg class="w-16 h-16 mx-auto text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+        </svg>
+        <p class="text-gray-600 font-medium">Sales chart will be displayed here</p>
+        <p class="text-sm text-gray-500 mt-1">Integrate with your analytics solution</p>
+      </div>
+    </div>
+  </div>
+</div>

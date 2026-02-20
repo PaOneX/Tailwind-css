@@ -15,7 +15,7 @@ export class AddCustomer {
   customerObj: CustomerModel = {
     id: '',
     title: '',
-    cusName: '',
+    name: '',
     dob: '',
     salary: 0,
     address: '',
@@ -31,7 +31,7 @@ export class AddCustomer {
       console.log(data);
        if (data === true) {
         Swal.fire({
-          title: "Good job! "+this.customerObj.cusName+" saved!",
+          title: "Good job! "+this.customerObj.name+" saved!",
           text: "You clicked the button!",
           icon: "success"
         });
@@ -47,7 +47,7 @@ export class AddCustomer {
     this.customerObj = {
       id: '',
       title: '',
-      cusName: '',
+      name: '',
       dob: '',
       salary: 0,
       address: '',

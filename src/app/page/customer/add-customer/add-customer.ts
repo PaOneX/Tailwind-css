@@ -35,6 +35,12 @@ export class AddCustomer {
           text: "You clicked the button!",
           icon: "success"
         });
+      }else{
+         Swal.fire({
+          title: "ERROR! "+this.customerObj.name+" saved!",
+          text: "You clicked the button!",
+          icon: "error"
+        });
       }
     })
   }

@@ -27,21 +27,31 @@ export class AddCustomer {
   addCustomer(){
     console.log(this.customerObj);
     
+    // Validate all fields are filled
+    if (!this.customerObj.id || !this.customerObj.title || !this.customerObj.name || 
+        !this.customerObj.dob || !this.customerObj.salary || !this.customerObj.address || 
+        !this.customerObj.city || !this.customerObj.province || !this.customerObj.postalCode) {
+      Swal.fire({
+        title: "Validation Error!",
+        text: "Please fill in all fields!",
+        icon: "warning"
+      });
+      return;
+    }
+    
     this.http.post('http://localhost:8080/customers',this.customerObj).subscribe(data => {
       console.log(data);
-       if (data === true) {
-        Swal.fire({
-          title: "Good job! "+this.customerObj.name+" saved!",
-          text: "You clicked the button!",
-          icon: "success"
-        });
-      }else{
-         Swal.fire({
-          title: "ERROR! "+this.customerObj.name+" saved!",
-          text: "You clicked the button!",
-          icon: "error"
-        });
-      }
+      Swal.fire({
+        title: "Good job! "+this.customerObj.name+" saved!",
+        text: "Customer added successfully!",
+        icon: "success"
+      });
+    }, error => {
+      Swal.fire({
+        title: "ERROR!",
+        text: "Failed to save customer!",
+        icon: "error"
+      });
     })
   }
 
